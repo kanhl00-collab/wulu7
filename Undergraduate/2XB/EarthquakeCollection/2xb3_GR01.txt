@@ -1,0 +1,18 @@
+Course Code: COMP SCI 2XB3
+
+Team Members:                    
+Student Number     Name                   Role in the Project
+400207974          Kan Hailan             client & tester
+1046206            Sembakutti Kalindu     researcher & programmer
+400171589          Tao Haoyang            designer & programmer
+400273067           Ye Fang               project leader & programmer
+
+
+We electronically sign and date that the work being submitted is our group work. 
+April 9, 2020
+
+Notes:
+1. You can run MCVDemo class in package demo to see how the project works. 
+The program will take the input from the input.txt by default. 
+Or you can uncomment the line(Scanner input = new Scanner(System.in);) to
+take the input from keyboard.

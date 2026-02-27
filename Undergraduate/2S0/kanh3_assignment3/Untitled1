@@ -1,0 +1,35 @@
+boolean isValid (String input) {
+        Stack<Character> stack = new Stack<> ();
+        for (int i = 0; i < input.length(); i ++) {
+            switch (input.charAt(i)){
+                case '(': stack.push('(');
+                    break;
+                case ')':
+                    if (stack.empty())
+                        return false;
+                    stack.pop();
+                    break;
+            }
+        }
+        return stack.empty();
+    }
+
+
+    int isValidRecursive(String input, int index) {
+        if (input.length() == index)
+            return index;
+        while (index < input.length() && input.charAt(index) == '(') {
+            index = isValidRecursive(input, index+1);
+            if (index == -1 || input.length() <= index || input.charAt(index) != ')')
+                return -1;
+            index++;
+        }
+        return index
+    }
+
+    boolean isValid(String input) {
+        int result = isValidRecursive(input,0);
+        if (result==-1 || result != input.length())
+            return false;
+        return true;
+    }
